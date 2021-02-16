@@ -198,42 +198,40 @@ export default {
           time: "12/2020 - 02/2021",
           text:
             "Développement de l'interface selon le CDC, plateforme d'achat revente de manuel scolaire.",
-          techno: "arbs.png",
+          techno: require('@/assets/projet_arbs.png'),
         },
         {
           title: "Skillosi",
           time: "12/2020 - 02/2021",
-          techno: "require(@/assets/xd_logo_circle.png)",
+          techno: require('@/assets/projet_skillosi.png'),
           text:
             "Proposition design et Développement de l'interface, plateforme de gestion de compétences internes",
         },
         {
           title: "Promod",
           time: "12/2020 - 02/2021",
-          techno: "assets/projet-promod_mrf.png",
-          text:
-            "Réalisation de divers maquettes Adobe XD, développement d'une WebView",
+          techno: require('@/assets/projet_promod_mrf.png'),
+          text:"Réalisation de divers maquettes Adobe XD, développement d'une WebView",
         },
         {
           title: "CEF",
           time: "12/2020 - 02/2021",
-          techno: "assets/projet_cef.png",
+          techno: require('@/assets/projet_cef.png'),
           text:
             "Développement de l'interface selon le CDC, organisme d'allocations familiales complémentaires.",
         },
         {
           title: "Rabot dutilleul",
           time: "12/2020 - 02/2021",
-          techno: "assets/projet_talent.png",
+          techno: require('@/assets/projet_talent.png'),
           text:
             "Design et élaboration charte graphique, plateforme de mise à disposition de ressources humaines secteur BTP",
         },
         {
           title: "Carter-Cash",
           time: "12/2020 - 02/2021",
-          techno: "projet_carter_cash.png",
-          text:
-            "Proposition d'une maquette xd, pour la refonte du site en responsive",
+          techno: require('@/assets/projet_carter_cash.png'),
+          text:"Proposition d'une maquette xd, pour la refonte du site en responsive",
         },
       ],
       features: [
