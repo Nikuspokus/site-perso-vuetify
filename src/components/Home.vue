@@ -1,15 +1,9 @@
 <template>
-  <!-- <div>
-      ceci est une page
-      
-  </div> -->
   <div id="app">
     <v-app>
       <v-app-bar app color="#21222e" height="100" class="design mx-auto" id="home">
         <v-avatar class="mr-3" size="70" @click="$vuetify.goTo('#home')">
           <v-img contain max-height="100%" src="@/assets/logo-nm.png"></v-img>
-          <!-- <v-img contain max-height="100%" src="/assets/logo.png"></v-img> -->
-          <!-- <v-img contain max-height="70%" src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"></v-img>  -->
         </v-avatar>
         <v-spacer></v-spacer>
         
@@ -19,7 +13,7 @@
         <v-btn style="color: #ffffff;" text @click="$vuetify.goTo('#contact')">Contact</v-btn>
       </v-app-bar> 
         <section id="home">
-          <v-parallax :height="$vuetify.breakpoint.smAndDown ? 900 : 800" src="@/assets/wallpaper.png">
+          <v-parallax :height="$vuetify.breakpoint.smAndDown ? 800 : 700" src="@/assets/wallpaper.png">
             <v-container fill-height>
               <v-row center class="white--text mx-auto" justify="center">
                 <v-col class="white--text text-center" cols="12" tag="h1">
@@ -57,21 +51,9 @@
               Après plusieurs années dans l'infographie, j'ai acqui des compétences de développeur Front-end je suis
               un développeur autodidacte"
             </v-responsive>
-            <!-- <v-avatar class="elevation-12 mb-12" size="128">
-            </v-avatar> -->
             <div class="mb-12 ratio">
               <v-img src="@/assets/photo_profil-2.png"></v-img>
             </div>
-            <!-- <v-btn
-            color="grey"
-            href="https://vuetifyjs.com"
-            outlined
-            large
-          >
-            <span class="grey--text text--darken-1 font-weight-bold">
-              Vuetify Documentation
-            </span>
-          </v-btn> -->
             <v-btn color="grey" href="@/assets/cv_nicolas_marquillier.pdf" outlined large>
               <span class="white--text text--darken-1 font-weight-bold download">
                 Télécharger mon CV
@@ -81,60 +63,6 @@
 
           <div class="py-12"></div>
         </section>
-
-        <!-- <section id="features" class="grey lighten-3">
-          <div class="py-12"></div>
-          <v-container class="text-center">
-            <h2 class="display-2 font-weight-bold mb-3">VUETIFY FEATURES</h2>
-            <v-responsive class="mx-auto mb-12" max-width="150" left>
-              <div class="title_component" style="position: relative;
-              background-color: #00C3AF;
-              height: 5px;
-              border-radius: 10px;
-              z-index: 1;"></div>
-            </v-responsive>
-            <v-row>
-              <v-col v-for="({ icon, title, text }, i) in features" :key="i" cols="12" md="4">
-                <v-card class="py-12 px-4" color="grey lighten-5" flat>
-                  <v-theme-provider dark>
-                    <div>
-                      <v-avatar color="primary" size="88">
-                        <v-icon large v-text="icon"></v-icon>
-                      </v-avatar>
-                    </div>
-                  </v-theme-provider>
-                  <v-card-title class="justify-center font-weight-black text-uppercase" v-text="title"></v-card-title>
-                  <v-card-text class="subtitle-1" v-text="text">
-                  </v-card-text>
-                </v-card>
-              </v-col>
-            </v-row>
-          </v-container>
-          <div class="py-12"></div>
-        </section> -->
-
-        <!-- <section id="stats">
-          <v-parallax :height="$vuetify.breakpoint.smAndDown ? 700 : 500" src="img/BG-smoke-1.png">
-            <v-container fill-height>
-              <v-row align="center" class="white--text mx-auto" justify="center">
-                <v-col class="white--text text-center" cols="12" tag="h1">
-                  <span :class="[$vuetify.breakpoint.smAndDown ? 'display-3' : 'display-4']" class="font-weight-black">
-                    Nicolas Marquillier
-                  </span>
-                  <br>
-                  <span :class="[$vuetify.breakpoint.smAndDown ? 'display-1': 'display-2']" class="font-weight-light">
-                    Développeur Front-end, Designer
-                  </span>
-                </v-col>
-                <v-btn color="white" class="align-self-end" fab outlined @click="$vuetify.goTo('#about-me')">
-                  <v-icon color="white">mdi-chevron-double-down</v-icon>
-                </v-btn>
-              </v-row>
-            </v-container>
-          </v-parallax>
-        </section> -->
-
-        <!-- swiper start -->
         <section id="competences">
           <div class="py-12"></div>
           <v-container>
@@ -145,14 +73,9 @@
               height: 5px;
               border-radius: 10px;
               z-index: 1;"></div>
-
             </v-responsive>
             <div class="main center">
               <div class="d-flex icone">
-
-
-
-
                 <div class="competence">
                   <v-img src="@/assets/vuejs_logo.png" center style=" max-width: 100px;
                  max-height: 100px;"></v-img>
@@ -169,7 +92,6 @@
                   <v-img src="@/assets/groupe_12.png" style=" max-width: 100px;
                 max-height: 100px;"></v-img>
                 </div>
-
                 <div class="competence">
                   <v-img src="@/assets/groupe_7.png" style=" max-width: 100px;
                 max-height: 100px;"></v-img>
@@ -200,13 +122,9 @@
                 </div>
               </div>
             </div> 
-
           </v-container>
           <div class="py-12"></div>
-
-          <!-- <div class="py-1"></div> -->
         </section>
-        <!-- swiper end -->
 
         <section id="projets" class="design">
           <div class="py-12"></div>
@@ -219,34 +137,17 @@
               height: 5px;
               border-radius: 10px;
               z-index: 1;"></div>
-
             </v-responsive>
             <v-row>
               <v-col v-for="({text, title, time, techno }, i) in articles" :key="i" cols="15" md="4">
-                <!-- <v-card elevation="10" max-width="70%">
-                  <v-img :src="src" class="mb-4" height="175" max-width="100%"></v-img>
-                  <h3 class="font-weight-black mb-4 text-uppercase" v-text="title"></h3>
-                  <div class="title font-weight-light mb-5" v-text="text"></div>
-                  <v-btn class="ml-n4 font-weight-black" text>
-                    Continue Reading
-                  </v-btn> 
-                </v-card> -->
                 <v-card hover elevation="1" class="card-project"
                   style=" width:auto; height: 370px; border-radius: 30px;">
                   <div>
-
-                    <!-- <v-img :src="src" height="150" max-width="100%" style="border-radius: 20px 20px 0px 0px;"></v-img> -->
                     <v-img :src="techno" height="170" max-width="100%" style="border-radius: 30px 30px 0px 0px;">
                     </v-img>
                   </div>
-                  <!-- <div>
-                    <v-img :src="techno" height="150" max-width="50%"></v-img>
-                  </div> -->
                   <div>
                     <v-row>
-                      <!-- <v-avatar style="display: inline-block; margin: 20px;">
-                        <img :src="techno"></v-img>
-                      </v-avatar> -->
                       <v-card-title primary-title class="justify-center" style="font-size: 1.10em; margin: auto;">
                         <div style="width: auto; margin-top: 10px;" class="justify-center">
                           <h3 class="headline pink--text text--accent-2 text-center" v-text="title"></h3>
@@ -255,111 +156,29 @@
                       </v-card-title>
                       <v-card-text class="subtitle-1" v-text="text" style="margin: 20px; font-size: 0.900rem;">
                       </v-card-text>
-
-
                       <div class="justify-content:center;">
-                        <!-- <v-card-title style=" margin: 10px;" class="font-weight-bold text-uppercase justify-center"
-                          v-text="title">strong</v-card-title> -->
                       </div>
                     </v-row>
                   </div>
                 </v-card>
-                <!-- <v-card-actions class=" justify-center">
-                      <v-btn flat color="orange">Add to Cart</v-btn>
-                      </v-card-actions-->
               </v-col> 
             </v-row>
           </v-container>
-
           <div class="py-12"></div>
         </section>
-
-        <!-- <v-sheet id="contact" color="#333333" dark tag="section" tile>
-          <div class="py-12"></div>
-          <v-container>
-            <h2 class="display-2 font-weight-bold mb-3 text-uppercase text-center">Contact Me</h2>
-            <v-responsive class="mx-auto mb-12" width="56">
-              <v-divider class="mb-1"></v-divider>
-              <v-divider></v-divider>
-            </v-responsive>
-            <v-theme-provider light>
-              <v-row>
-                <v-col cols="12">
-                  <v-text-field flat label="Name*" required solo></v-text-field>
-                </v-col>
-                <v-col cols="12">
-                  <v-text-field flat label="Email*" required solo></v-text-field>
-                </v-col>
-                <v-col cols="12">
-                  <v-text-field flat label="Subject*" required solo></v-text-field>
-                </v-col>
-                <v-col cols="12">
-                  <v-textarea flat label="Message*" required solo></v-textarea>
-                </v-col>
-                <v-col class="mx-auto" cols="auto">
-                  <v-btn color="accent" x-large>
-                    Submit
-                  </v-btn>
-                </v-col>
-              </v-row>
-            </v-theme-provider>
-          </v-container-->
-        <!-- <v-container>
-          <form action="mailto:nicolas.marquillier@gmail.com" method="post" enctype="text/plain">
-            FirstName:<input type="text" name="FirstName" placeholder="Prénom">
-            <input type="text" name="Email" placeholder="Email">
-            <input type="submit" name="submit" value="Submit">
-          </form>
-        </v-container> -->
         <section id="contact">
-
           <div class="main center design">
             <div class="icon center">
               <a target="_blank" href="https://www.linkedin.com/in/nicolas-marquillier-aa08a4101">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>
-
             <div class="icon center">
               <a target="_blank" href="mailto:nicolas.marquillier.pro@gmail.com">
                 <i class="far fa-envelope"></i></a>
             </div>
-
-            <!-- <div class="icon center">
-                <i class="fab fa-whatsapp fa-2x"></i>
-              </div>
-              
-              <div class="icon center">
-                <i class="fab fa-twitter fa-2x"></i>
-              </div> -->
           </div>
         </section>
-        <!--div class="py-12"></div>
-        </v-sheet> -->
-        <section id="about-me" class="design grey lighten-3">
-          <!-- <div class="py-12"></div>
-          <v-container class="text-center">
-            <h2 class="display-2 font-weight-bold mb-3" style="color: #ffffff;">ME CONTACTER</h2>
-            <v-responsive class="mx-auto mb-12" max-width="150" left>
-              <div class="title_component" style="position: relative;
-              background-color: #00C3AF;
-              height: 5px;
-              border-radius: 10px;
-              z-index: 1;"></div>
-            </v-responsive>
-            <div class="mb-12 ratio">
-              <v-img src="img/photo_profil-2.png"></v-img>
-            </div>
-            <v-btn color="grey" href="img/cv_nicolas_marquillier.pdf" outlined large>
-              <span class="white--text text--darken-1 font-weight-bold">
-                Télécharger mon CV
-              </span>
-            </v-btn>
-          </v-container> -->
-
-        </section>
- 
-
       <v-footer class="justify-center " height="100" style="background-color: rgb(48, 49, 68);">
         <div class="title font-weight-light grey--text text--lighten-1 text-center">
           &copy; {{ (new Date()).getFullYear() }} —Made with 💚 by Nicolas Marquillier
@@ -379,40 +198,40 @@ export default {
           time: "12/2020 - 02/2021",
           text:
             "Développement de l'interface selon le CDC, plateforme d'achat revente de manuel scolaire.",
-          techno: "src/assets/arbs.png",
+          techno: "arbs.png",
         },
         {
           title: "Skillosi",
           time: "12/2020 - 02/2021",
-          techno: "@/assets/img/projet_skillosi.png",
+          techno: "require(@/assets/xd_logo_circle.png)",
           text:
             "Proposition design et Développement de l'interface, plateforme de gestion de compétences internes",
         },
         {
           title: "Promod",
           time: "12/2020 - 02/2021",
-          techno: "assets/img/projet-promod_mrf.png",
+          techno: "assets/projet-promod_mrf.png",
           text:
             "Réalisation de divers maquettes Adobe XD, développement d'une WebView",
         },
         {
           title: "CEF",
           time: "12/2020 - 02/2021",
-          techno: "assets/img/projet_cef.png",
+          techno: "assets/projet_cef.png",
           text:
             "Développement de l'interface selon le CDC, organisme d'allocations familiales complémentaires.",
         },
         {
           title: "Rabot dutilleul",
           time: "12/2020 - 02/2021",
-          techno: "assets/img/projet_talent.png",
+          techno: "assets/projet_talent.png",
           text:
             "Design et élaboration charte graphique, plateforme de mise à disposition de ressources humaines secteur BTP",
         },
         {
           title: "Carter-Cash",
           time: "12/2020 - 02/2021",
-          techno: "assets/img/projet_carter_cash.png",
+          techno: "projet_carter_cash.png",
           text:
             "Proposition d'une maquette xd, pour la refonte du site en responsive",
         },
@@ -437,13 +256,6 @@ export default {
             "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam",
         },
       ],
-      stats: [
-        ["24k", "Github Stars"],
-        ["330+", "Releases"],
-        ["1m", "Downloads/mo"],
-        ["5m", "Total Downloads"],
-      ],
-      valid: true,
     };
   },
 };
