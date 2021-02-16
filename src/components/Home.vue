@@ -7,8 +7,8 @@
     <v-app>
       <v-app-bar app color="#21222e" height="100" class="design mx-auto" id="home">
         <v-avatar class="mr-3" size="70" @click="$vuetify.goTo('#home')">
-          <!-- <v-img contain max-height="100%" src="assets/img/logo-nm.png"></v-img> -->
-          <v-img contain max-height="100%" src="/assets/logo.png"></v-img>
+          <v-img contain max-height="100%" src="@/assets/logo-nm.png"></v-img>
+          <!-- <v-img contain max-height="100%" src="/assets/logo.png"></v-img> -->
           <!-- <v-img contain max-height="70%" src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"></v-img>  -->
         </v-avatar>
         <v-spacer></v-spacer>
@@ -19,7 +19,7 @@
         <v-btn style="color: #ffffff;" text @click="$vuetify.goTo('#contact')">Contact</v-btn>
       </v-app-bar> 
         <section id="home">
-          <v-parallax :height="$vuetify.breakpoint.smAndDown ? 900 : 800" src="assets/logo.png">
+          <v-parallax :height="$vuetify.breakpoint.smAndDown ? 900 : 800" src="@/assets/wallpaper.png">
             <v-container fill-height>
               <v-row center class="white--text mx-auto" justify="center">
                 <v-col class="white--text text-center" cols="12" tag="h1">
@@ -60,7 +60,7 @@
             <!-- <v-avatar class="elevation-12 mb-12" size="128">
             </v-avatar> -->
             <div class="mb-12 ratio">
-              <v-img src="assets/img/photo_profil-2.png"></v-img>
+              <v-img src="@/assets/photo_profil-2.png"></v-img>
             </div>
             <!-- <v-btn
             color="grey"
@@ -72,7 +72,7 @@
               Vuetify Documentation
             </span>
           </v-btn> -->
-            <v-btn color="grey" href="img/cv_nicolas_marquillier.pdf" outlined large>
+            <v-btn color="grey" href="@/assets/cv_nicolas_marquillier.pdf" outlined large>
               <span class="white--text text--darken-1 font-weight-bold download">
                 Télécharger mon CV
               </span>
@@ -154,54 +154,52 @@
 
 
                 <div class="competence">
-
-                  <v-img src="assets\img\vuejs_logo.png" center style=" max-width: 100px;
-                max-height: 100px;"></v-img>
-
+                  <v-img src="@/assets/vuejs_logo.png" center style=" max-width: 100px;
+                 max-height: 100px;"></v-img>
                 </div>
                 <div class="competence">
-                  <v-img src="assets\img\groupe_5.png" style=" max-width: 100px;
+                  <v-img src="@/assets/groupe_5.png" style=" max-width: 100px;
                 max-height: 100px;"></v-img>
                 </div>
                 <div class="competence">
-                  <v-img src="assets/img\groupe_11.png" style=" max-width: 100px;
+                  <v-img src="@/assets/groupe_11.png" style=" max-width: 100px;
                 max-height: 100px;"></v-img>
                 </div>
                 <div class="competence">
-                  <v-img src="assets\img\groupe_12.png" style=" max-width: 100px;
+                  <v-img src="@/assets/groupe_12.png" style=" max-width: 100px;
                 max-height: 100px;"></v-img>
                 </div>
 
                 <div class="competence">
-                  <v-img src="assets\img\groupe_7.png" style=" max-width: 100px;
+                  <v-img src="@/assets/groupe_7.png" style=" max-width: 100px;
                 max-height: 100px;"></v-img>
                 </div>
                 <div class="competence">
-                  <v-img src="assets\img\groupe_6.png" style=" max-width: 100px;
+                  <v-img src="@/assets/groupe_6.png" style=" max-width: 100px;
                 max-height: 100px;"></v-img>
                 </div>
                 <div class="competence">
-                  <v-img src="assets\img\groupe_8.png" style=" max-width: 100px;
+                  <v-img src="@/assets/groupe_8.png" style=" max-width: 100px;
                 max-height: 100px;"></v-img>
                 </div>
                 <div class="competence">
-                  <v-img src="assets\img\apple_logo.png" style=" max-width: 100px;
+                  <v-img src="@/assets/apple_logo.png" style=" max-width: 100px;
                 max-height: 100px;"></v-img>
                 </div>
                 <div class="competence">
-                  <v-img src="assets\img\ae_logo_circle.png" style=" max-width: 100px;
+                  <v-img src="@/assets/ae_logo_circle.png" style=" max-width: 100px;
                 max-height: 100px;"></v-img>
                 </div>
                 <div class="competence">
-                  <v-img src="assets\img\ai_logo_circle.png" style=" max-width: 100px;
+                  <v-img src="@/assets/ai_logo_circle.png" style=" max-width: 100px;
                 max-height: 100px;"></v-img>
                 </div>
                 <div class="competence">
-                  <v-img src="assets\img\xd_logo_circle.png" style=" max-width: 100px;
+                  <v-img src="@/assets/xd_logo_circle.png" style=" max-width: 100px;
                 max-height: 100px;"></v-img>
                 </div>
               </div>
-            </div>
+            </div> 
 
           </v-container>
           <div class="py-12"></div>
@@ -373,75 +371,185 @@
 
 <script>
 export default {
-    data() {
-        return {
-          articles: [
-            {
-              title: 'ARBS',
-              time: '12/2020 - 02/2021',
-              text: "Développement de l'interface selon le CDC, plateforme d'achat revente de manuel scolaire.",
-              techno: 'assets/img/arbs.png',
-            },
-            {
-              title: 'Skillosi',
-              time: '12/2020 - 02/2021',
-              techno: 'assets/img/projet_skillosi.png',
-              text: "Proposition design et Développement de l'interface, plateforme de gestion de compétences internes",
-            },
-            {
-              title: 'Promod',
-              time: '12/2020 - 02/2021',
-              techno: "assets/img/projet-promod_mrf.png",
-              text: "Réalisation de divers maquettes Adobe XD, développement d'une WebView",
-            },
-            {
-              title: 'CEF',
-              time: '12/2020 - 02/2021',
-              techno: "assets/img/projet_cef.png",
-              text: "Développement de l'interface selon le CDC, organisme d'allocations familiales complémentaires.",
-            },
-            {
-              title: 'Rabot dutilleul',
-              time: '12/2020 - 02/2021',
-              techno: 'assets/img/projet_talent.png',
-              text: 'Design et élaboration charte graphique, plateforme de mise à disposition de ressources humaines secteur BTP',
-            },
-            {
-              title: 'Carter-Cash',
-              time: '12/2020 - 02/2021',
-              techno: 'assets/img/projet_carter_cash.png',
-              text: "Proposition d'une maquette xd, pour la refonte du site en responsive",
-            },
-          ],
-          features: [
-            {
-              icon: 'mdi-account-group-outline',
-              title: 'Vibrant Community',
-              text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
-            },
-            {
-              icon: 'mdi-update',
-              title: 'Frequent Updates',
-              text: 'Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit.',
-            },
-            {
-              icon: 'mdi-shield-outline',
-              title: 'Long-term Support',
-              text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam',
-            },
-          ],
-          stats: [
-            ['24k', 'Github Stars'],
-            ['330+', 'Releases'],
-            ['1m', 'Downloads/mo'],
-            ['5m', 'Total Downloads'],
-          ],
-          valid: true
-        }
-      }
-}
+  data() {
+    return {
+      articles: [
+        {
+          title: "ARBS",
+          time: "12/2020 - 02/2021",
+          text:
+            "Développement de l'interface selon le CDC, plateforme d'achat revente de manuel scolaire.",
+          techno: "src/assets/arbs.png",
+        },
+        {
+          title: "Skillosi",
+          time: "12/2020 - 02/2021",
+          techno: "@/assets/img/projet_skillosi.png",
+          text:
+            "Proposition design et Développement de l'interface, plateforme de gestion de compétences internes",
+        },
+        {
+          title: "Promod",
+          time: "12/2020 - 02/2021",
+          techno: "assets/img/projet-promod_mrf.png",
+          text:
+            "Réalisation de divers maquettes Adobe XD, développement d'une WebView",
+        },
+        {
+          title: "CEF",
+          time: "12/2020 - 02/2021",
+          techno: "assets/img/projet_cef.png",
+          text:
+            "Développement de l'interface selon le CDC, organisme d'allocations familiales complémentaires.",
+        },
+        {
+          title: "Rabot dutilleul",
+          time: "12/2020 - 02/2021",
+          techno: "assets/img/projet_talent.png",
+          text:
+            "Design et élaboration charte graphique, plateforme de mise à disposition de ressources humaines secteur BTP",
+        },
+        {
+          title: "Carter-Cash",
+          time: "12/2020 - 02/2021",
+          techno: "assets/img/projet_carter_cash.png",
+          text:
+            "Proposition d'une maquette xd, pour la refonte du site en responsive",
+        },
+      ],
+      features: [
+        {
+          icon: "mdi-account-group-outline",
+          title: "Vibrant Community",
+          text:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam",
+        },
+        {
+          icon: "mdi-update",
+          title: "Frequent Updates",
+          text:
+            "Sed ut elementum justo. Suspendisse non justo enim. Vestibulum cursus mauris dui, a luctus ex blandit. Lorem ipsum dolor sit amet consectetur adipisicing elit. qui ipsum eveniet facilis obcaecati corrupti consectetur adipisicing elit.",
+        },
+        {
+          icon: "mdi-shield-outline",
+          title: "Long-term Support",
+          text:
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate sint possimus quidem atque harum excepturi nemo velit tempora! Enim inventore fuga, qui ipsum eveniet facilis obcaecati corrupti asperiores nam",
+        },
+      ],
+      stats: [
+        ["24k", "Github Stars"],
+        ["330+", "Releases"],
+        ["1m", "Downloads/mo"],
+        ["5m", "Total Downloads"],
+      ],
+      valid: true,
+    };
+  },
+};
 </script>
 
 <style>
+    .design {
+      background-color: rgb(48, 49, 68);
+    }
 
-</style>
+    .design-text {
+      color: #ffffff;
+    }
+
+    .ratio {
+      width: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .rounded-card {
+      border-radius: 50px;
+    }
+
+    .main {
+      height: 100;
+    }
+
+    .icon {
+      width: 50px;
+      height: 50px;
+      margin: 20px;
+      cursor: pointer;
+      border-radius: 50px;
+      transition: all .4s;
+    }
+
+    .center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .icon:nth-child(1):hover {
+      box-shadow: 0 0 0 2px #00C3AF;
+    }
+
+    .icon:nth-child(2):hover {
+      box-shadow: 0 0 0 2px #00C3AF;
+    }
+
+    .fa-linkedin-in {
+      color: #fff;
+      filter: drop-shadow(0 0 10px #fff);
+    }
+
+    .fa-envelope {
+      color: #fff;
+      filter: drop-shadow(0 0 10px #fff);
+    }
+
+    .picto {
+      float: left;
+      width: 20px;
+      height: 20px;
+      margin: 20px;
+      border-radius: 50px;
+    }
+
+    .icone {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    /* COMPETENCES */
+    .competence:hover {
+      box-shadow: 0 0 0 3px #00C3AF;
+      border-radius: 50px;
+    }
+
+    .competence {
+      margin: 10px;
+    }
+
+    /* .jobDate {
+      text-align: center;
+    } */
+
+
+    /* .card-project {
+      height: 350px;
+      border-radius: 20px;
+    }
+    .card-project:hover {
+      border: 2px solid #00C3AF;
+    } */
+
+    @media (max-width: 600px) {
+      .ratio {
+        width: 200px;
+      }
+
+      .card-project {
+        height: 50px;
+        border-radius: 20px;
+      }
+    }
+  </style>
