@@ -1,0 +1,101 @@
+.design {
+    background-color: rgb(48, 49, 68);
+  }
+  
+  .design-text {
+    color: #ffffff;
+  }
+  
+  .ratio {
+    width: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .rounded-card {
+    border-radius: 50px;
+  }
+  
+  .main {
+    height: 100;
+  }
+  
+  .icon {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: all 0.4s;
+  }
+  
+  .center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /*======> Gestion Contact <====== DEBUT */
+  /* .icon:nth-child(1):hover {
+    box-shadow: 0 0 0 2px #00c3af;
+  }
+  
+  .icon:nth-child(2):hover {
+    box-shadow: 0 0 0 2px #00c3af;
+  }
+  
+  .fa-linkedin-in {
+        color: #fff;
+        filter: drop-shadow(0 0 10px #fff);
+      }
+  
+  .fa-coffee {
+        color: #fff;
+        filter: drop-shadow(0 0 10px #fff);
+      } */
+  /*======> Gestion Contact <====== FIN */
+  .picto {
+    float: left;
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+    border-radius: 50px;
+  }
+  
+  .icone {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* COMPETENCES */
+  .competence:hover {
+    box-shadow: 0 0 0 3px #00c3af;
+    border-radius: 50px;
+  }
+  
+  .competence {
+    margin: 10px;
+  }
+  
+  /* .jobDate {
+        text-align: center;
+      } */
+  
+  /* .card-project {
+        height: 350px;
+        border-radius: 20px;
+      }
+      .card-project:hover {
+        border: 2px solid #00C3AF;
+      } */
+  
+  @media (max-width: 600px) {
+    .ratio {
+      width: 200px;
+    }
+  
+    .card-project {
+      height: 50px;
+      border-radius: 20px;
+    }
+  } 
