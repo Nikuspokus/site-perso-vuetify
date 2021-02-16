@@ -108,6 +108,7 @@
           <v-btn
             color="grey"
             href="@/assets/cv_nicolas_marquillier.pdf"
+            download
             outlined
             large
           >
@@ -239,7 +240,7 @@
             <v-col
               v-for="({ text, title, time, techno }, i) in articles"
               :key="i"
-              cols="15"
+              cols="12"
               md="4"
             >
               <v-card
