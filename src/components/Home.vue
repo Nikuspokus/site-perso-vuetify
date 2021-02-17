@@ -58,7 +58,6 @@
                 >
                   Développeur Front-end, Designer
                 </span>
-                
               </v-col>
               <v-btn
                 color="white"
@@ -107,7 +106,7 @@
           </div>
           <v-btn
             color="grey"
-            href="@/assets/cv_nicolas_marquillier.pdf"
+            href="cv_nicolas_marquillier.pdf"
             download
             outlined
             large
@@ -294,22 +293,33 @@
       <section id="contact">
         <div class="main center design">
           <div class="icon center">
-              <a target="_blank" href="https://www.linkedin.com/in/nicolas-marquillier-aa08a4101">
-                <v-img
-                  src="@/assets/linkedin-in.svg"
-                  style="max-width: 17px; max-height: auto; filter: brightness(0) invert(1);"
-                ></v-img>
-              </a>
-            </div>
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/nicolas-marquillier-aa08a4101"
+            >
+              <v-img
+                src="@/assets/linkedin-in.svg"
+                style="
+                  max-width: 17px;
+                  max-height: auto;
+                  filter: brightness(0) invert(1);
+                "
+              ></v-img>
+            </a>
+          </div>
 
-            <div class="icon center">
-              <a target="_blank" href="mailto:nicolas.marquillier.pro@gmail.com">
-                <v-img
-                  src="@/assets/envelope-solid.svg"
-                  style="max-width: 17px; max-height: auto; filter: brightness(0) invert(1);"
-                ></v-img>
-                </a>
-            </div>
+          <div class="icon center">
+            <a target="_blank" href="mailto:nicolas.marquillier.pro@gmail.com">
+              <v-img
+                src="@/assets/envelope-solid.svg"
+                style="
+                  max-width: 17px;
+                  max-height: auto;
+                  filter: brightness(0) invert(1);
+                "
+              ></v-img>
+            </a>
+          </div>
         </div>
       </section>
       <v-footer
@@ -320,7 +330,6 @@
         <div
           class="title font-weight-light grey--text text--lighten-1 text-center"
         >
-        
           &copy; {{ new Date().getFullYear() }} —Made with 💚 by Nicolas
           Marquillier
         </div>
@@ -432,14 +441,14 @@ export default {
 }
 
 .fa-linkedin-in {
-      color: #fff;
-      filter: drop-shadow(0 0 10px #fff);
-    }
+  color: #fff;
+  filter: drop-shadow(0 0 10px #fff);
+}
 
 .fa-coffee {
-      color: #fff;
-      filter: drop-shadow(0 0 10px #fff);
-    } 
+  color: #fff;
+  filter: drop-shadow(0 0 10px #fff);
+}
 /*======> Gestion Contact <====== FIN */
 .picto {
   float: left;
