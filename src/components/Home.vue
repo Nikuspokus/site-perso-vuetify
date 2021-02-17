@@ -91,7 +91,7 @@
                   ]"
                   class="font-weight-light"
                 >
-                  Développeur Front-end, Designer
+                  Développeur Frontend, Designer
                 </span>
               </v-col>
               <v-btn
@@ -133,8 +133,8 @@
             "Je suis passionné par le secteur du web et du design.<br />
 
             Après plusieurs années dans l'infographie, j'ai acquis des
-            compétences de développeur Front-end je suis un développeur
-            autodidacte"
+            compétences de développeur Frontend.
+            Je suis un développeur autodidacte."
           </v-responsive>
           <div class="mb-12 ratio">
             <v-img src="@/assets/photo_profil-2.png"></v-img>
