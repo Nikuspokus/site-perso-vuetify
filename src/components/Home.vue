@@ -32,7 +32,42 @@
         <v-btn style="color: #ffffff" text @click="$vuetify.goTo('#contact')"
           >Contact</v-btn
         >
+        
       </v-app-bar>
+
+      <v-navigation-drawer
+      v-model="drawer"
+      absolute
+      bottom
+      temporary
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item>
+            <v-list-item-title>Foo</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Bar</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Fizz</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item>
+            <v-list-item-title>Buzz</v-list-item-title>
+          </v-list-item>
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+
       <section id="home">
         <v-parallax
           :height="$vuetify.breakpoint.smAndDown ? 800 : 700"
@@ -97,7 +132,7 @@
           >
             "Je suis passionné par le secteur du web et du design.<br />
 
-            Après plusieurs années dans l'infographie, j'ai acqui des
+            Après plusieurs années dans l'infographie, j'ai acquis des
             compétences de développeur Front-end je suis un développeur
             autodidacte"
           </v-responsive>
