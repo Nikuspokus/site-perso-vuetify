@@ -177,11 +177,21 @@
           <div class="main center">
             <div class="d-flex icone">
               <div class="competence">
+
+                <v-tooltip top>
+                  <template v-slot:activator="{ on, attrs }">
                 <v-img
+                  color="primary"
+                  dark
+                  v-bind="attrs"
+                  v-on="on"
                   src="@/assets/vuejs_logo.png"
                   center
                   style="max-width: 100px; max-height: 100px"
                 ></v-img>
+                </template>
+                <span>After Effects</span>
+                </v-tooltip>
               </div>
               <div class="competence">
                 <v-img
@@ -226,10 +236,19 @@
                 ></v-img>
               </div>
               <div class="competence">
+                <v-tooltip top>
+                  <template v-slot:activator="{ on, attrs }">
                 <v-img
+                  color="primary"
+                  dark
+                  v-bind="attrs"
+                  v-on="on"
                   src="@/assets/ae_logo_circle.png"
                   style="max-width: 100px; max-height: 100px"
                 ></v-img>
+                </template>
+                <span>After Effects</span>
+                </v-tooltip>
               </div>
               <div class="competence">
                 <v-img
