@@ -190,14 +190,23 @@
                   style="max-width: 100px; max-height: 100px"
                 ></v-img>
                 </template>
-                <span>After Effects</span>
+                <span>VueJS</span>
                 </v-tooltip>
               </div>
               <div class="competence">
+                <v-tooltip top>
+                  <template v-slot:activator="{ on, attrs }">
                 <v-img
+                  color="primary"
+                  dark
+                  v-bind="attrs"
+                  v-on="on"
                   src="@/assets/groupe_5.png"
                   style="max-width: 100px; max-height: 100px"
                 ></v-img>
+                </template>
+                <span>Vuetify</span>
+                </v-tooltip>
               </div>
               <div class="competence">
                 <v-img
@@ -406,28 +415,28 @@ export default {
         },
         {
           title: "Skillosi",
-          time: "12/2020 - 02/2021",
+          time: "08/2020 - 11/2020",
           techno: require("@/assets/projet_skillosi.png"),
           text:
             "Proposition design et Développement de l'interface, plateforme de gestion de compétences internes",
         },
         {
           title: "Promod",
-          time: "12/2020 - 02/2021",
+          time: "06/2020 - 10/2020",
           techno: require("@/assets/projet_promod_mrf.png"),
           text:
             "Réalisation de divers maquettes Adobe XD, développement d'une WebView",
         },
         {
           title: "CEF",
-          time: "12/2020 - 02/2021",
+          time: "01/2020 - 07/2020",
           techno: require("@/assets/projet_cef.png"),
           text:
             "Développement de l'interface selon le CDC, organisme d'allocations familiales complémentaires.",
         },
         {
           title: "Rabot dutilleul",
-          time: "12/2020 - 02/2021",
+          time: "11/2020",
           techno: require("@/assets/projet_talent.png"),
           text:
             "Design et élaboration charte graphique, plateforme de mise à disposition de ressources humaines secteur BTP",
